@@ -106,7 +106,7 @@ console.log(contactInfo);
 const unisWithUni = [];
 
 graduates.filter((arrItem) => {
-  
+
 })
 
 console.log(unisWithUni);
@@ -135,6 +135,11 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+
+zooAnimals.forEach((arrItem) => {
+  displayNames.push(`Name: ${arrItem.animal_name}, Scientific: ${arrItem.scientific_name}`);
+});
+
 console.log(displayNames);
 
 /* Request 2: .map()
