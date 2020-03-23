@@ -30,13 +30,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `.map` goes through each item in an array AND puts the altered items in a new array.
+    `.forEach` only goes through each item in an array.
+
 2. What is the difference between a function and a method?
+
+    A function is a snippet of code that does a specific thing. A method is a function that is the value of a key:value pair on an object. Methods are connected to objects, but functions are not.
 
 3. What is closure?
 
+    Closure basically means that a nested function remembers the environment it was made in. If there was a variable defined in its environment when it was declared, then the nested function will remember the value of that variable. Then, the nested function will still be able to access that variable even when it is called in a different environment.
+    Closure also protects variables because the variables cannot be changed outside of the scope they were made in.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. In global scope, `this` refers to the environment/object that the JS is being run in. This is global binding.
+
+    2. When you call a method on an object, `this` refers to the object that is to the left of the dot. This is imlicit binding.
+
+    3. When you use the `new` keyword to make a new instance of an object, `this` refers to that new instance. This is new binding.
+
+    4. When you use `call` or `apply` you can tell `this` what to point to. You can override what `this` would normally point to. This is explicit binding.
+
 5. Why do we need super() in an extended class?
+
+    Super() allows us to refer to the parent class constructor so that we can use the key:value pairs that are already set up there. That way we will not have to retype all of them. It basically copies the parent's key:value pairs to the extended class.
 
 ## Project Set up
 
